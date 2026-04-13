@@ -47,7 +47,9 @@ The following classification algorithms were implemented and compared:
 - Decision Tree Classifier  
 - K-Nearest Neighbors (KNN)  
 - Linear Discriminant Analysis (LDA)  
-- Quadratic Discriminant Analysis (QDA)  
+- Quadratic Discriminant Analysis (QDA)
+
+<img width="701" height="556" alt="image" src="https://github.com/user-attachments/assets/7a9a82b2-20a4-40be-b052-0d5ea7306c81" />  
 
 ### 4.3 Model Evaluation  
 Models were evaluated using a hold-out test set with the following metrics:
@@ -56,12 +58,32 @@ Models were evaluated using a hold-out test set with the following metrics:
 - Precision  
 - Recall  
 - F1 Score  
-- ROC-AUC  
+- ROC-AUC
 
 ---
 
 ## 5. Results  
 The Decision Tree Classifier achieved the best overall performance among all tested models.
+
+### Model Performance - Accuracy
+
+| Model                          | Train | Test | Gap |
+|-------------------------------|-------|------|-----|
+| Logistic Regression           | 0.96  | 0.96 | 0.00 |
+| Decision Tree                 | 0.99  | 0.99 | 0.00 |
+| K-Nearest Neighbors          | 1.00  | 0.97 | 0.03 |
+| Linear Discriminant Analysis | 0.92  | 0.92 | 0.00 |
+| Quadratic Discriminant Analysis | 0.77 | 0.71 | 0.05 |
+
+### Model Performance - F1 Score
+
+| Model                          | Train | Test | Gap |
+|-------------------------------|-------|------|-----|
+| Logistic Regression           | 0.97  | 0.96 | 0.00 |
+| Decision Tree                 | 0.99  | 0.99 | 0.00 |
+| K-Nearest Neighbors          | 1.00  | 0.98 | 0.02 |
+| Linear Discriminant Analysis | 0.94  | 0.94 | 0.01 |
+| Quadratic Discriminant Analysis | 0.85 | 0.80 | 0.05 |
 
 ### Key findings:
 - Tree-based models captured nonlinear relationships effectively  
